@@ -6,11 +6,11 @@ Do you need to monitor your ECU Data without bringing your laptop with you all t
 
 There's a solution, and it's very cheap. I've been tinkering for years to develop this solution, wasted a lot of money on development boards all for having the BEST solution ever.
 
-Check the following youtube video to see a demo: https://youtu.be/CQPU9dfFPQw
+Check the following youtube video to see a demo for the free version: https://youtu.be/CQPU9dfFPQw
 
-On this video, the dashboard is receiving simulated data over CanBus.
+On this video, the dashboard is receiving simulated data over CanBus. The firmware is tested and currently running on 20+ cars and it's actually bug free.
 
-Here how you can do it, it's very simple, first you purchase this (if you want to buy me a beer, purchase it through my link):
+Here how you can do it, it's very simple, first you purchase this (if you want to buy me a beer, purchase it through my link): **Waiting for approval of referal link**
 
 Get a USB Type C data cable and hook it up into your device. 
 Visit this website https://esptool.spacehuhn.com/ and connect to your device.
@@ -27,6 +27,10 @@ Now onto the wiring of the unit to the microsquirt! Follow this:
 
 https://github.com/somahex00-web/Megasquirt-Microsquirt-digital-dashboard-for-under-50-DIY/blob/main/Dashboard%20for%20microsquirt%20installation%20guide%20-%205%20inch%20dash%20ENG%20161025.pdf
 
+I've made tons of better graphics which i'm keeping for licensed use, you can check some on my youtube channel: https://www.youtube.com/@alfredodimatteo2850
 
+One of the most recent version is the following: https://www.youtube.com/watch?v=xfOAbD9B4jw
 
-I've kept the "premium" dashboard for licensed use, you can check my other youtube videos to see the paid version.
+List of features and available backgrounds will will be available in other files of the branch.
+
+Basically, after you first flash the demo version of the device, you get an unique hardware code clicking on the bottom right corner of the screen. If you wish to purchase the paid version, you will get 1 Hardware use only, this means I will craft the firmware specifically for your board and you cannot distribuite it to other units. This is done to prevent multiple units having the same paid license.
