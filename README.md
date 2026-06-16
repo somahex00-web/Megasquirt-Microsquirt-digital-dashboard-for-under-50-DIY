@@ -10,7 +10,9 @@ Check the following youtube video to see a demo for the free version: https://yo
 
 On this video, the dashboard is receiving simulated data over CanBus. The firmware is tested and currently running on 20+ cars and it's actually bug free.
 
-Here how you can do it, it's very simple, first you purchase this (if you want to buy me a beer, purchase it through my link): **Waiting for approval of referal link**
+Here how you can do it, it's very simple, first you purchase this (if you want to buy me a beer, purchase it through my link:
+
+https://www.waveshare.com/esp32-s3-touch-lcd-5.htm?sku=28117
 
 Get a USB Type C data cable and hook it up into your device. 
 Visit this website https://esptool.spacehuhn.com/ and connect to your device.
