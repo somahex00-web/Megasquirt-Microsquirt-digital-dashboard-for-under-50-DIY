@@ -17,13 +17,20 @@ https://www.waveshare.com/esp32-s3-touch-lcd-5.htm?&aff_id=155489
 you need the touch version with 800*480 resolution.
 
 Get a USB Type C data cable and hook it up into your device. 
-Visit this website https://esptool.spacehuhn.com/ and connect to your device.
+
+Download my free_bin here:
+https://github.com/somahex00-web/Megasquirt-Microsquirt-digital-dashboard-for-under-50-DIY/blob/main/Dash_Micro_LCD5_Free.bin
+
+Then visit this website https://esptool.spacehuhn.com/ and connect to your device.
 
 You need to select your board from available COM Ports. It's easily detectable as it says "ESP32".
 
 If it doesn't connect, hold boot button, hold now reset button, keep for 2 seconds then release reset, wait 1 second and also release boot. It should work now.
 
 After connection you will be prompted what to flash and where. You need to flash the firmware "LCD_DASH_5Inch_FREE.Bin" right at 0x0000 address.
+if you prefer a more visual guide, check:
+
+https://github.com/somahex00-web/Megasquirt-Microsquirt-digital-dashboard-for-under-50-DIY/blob/main/How%20to%20flash.pdf
 
 After it's done, reboot the device using the reset button or unplug/plug back your USB.
 
