@@ -47,6 +47,8 @@ https://github.com/somahex00-web/Megasquirt-Microsquirt-digital-dashboard-for-un
 
 How to purchase:
 
+*premium licensed software price is only 75 Euro*
+
 Basically, after you first flash the demo version of the device, you can get an unique license code clicking on the bottom right corner of the screen. If you wish to purchase the paid version, you need to send me license code and send me an inquiry through my website:
 https://somahex00.wixsite.com/home/contact
 what you get is your custom licensed firmware bin that will run only on your board and you cannot distribuite it to other boards. This is done to prevent multiple units having the same paid license.
