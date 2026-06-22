@@ -6,6 +6,13 @@ A low-cost digital racing dashboard solution for Megasquirt and Microsquirt ECUs
   <img src="images/Free_dashboard_design.jpg" width="800">
 </p>
 
+Premium licensed version + 3d Printed ABS Cluster:
+
+<p align="center">
+  <img src="images/5Inch_With_3dClusterON.jpg" width="800">
+</p>
+
+
 ## Introduction
 
 Have you ever looked at modern racing LCD dashboards and thought:
@@ -213,6 +220,13 @@ The premium firmware license costs:
 
 75 Euro
 
+You also get the following 3d file ready to print:
+
+https://cults3d.com/en/3d-model/gadget/waveshare-esp32-s3-5inch-display-dashboard-case
+
+<p align="center">
+  <img src="images/5Inch_With_3dCluster.webp" width="800">
+</p>
 
 This contribution supports:
 
