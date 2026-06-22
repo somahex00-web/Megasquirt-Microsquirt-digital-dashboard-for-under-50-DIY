@@ -223,9 +223,11 @@ The premium firmware license costs:
 You also get the following 3d file ready to print:
 
 https://cults3d.com/en/3d-model/gadget/waveshare-esp32-s3-5inch-display-dashboard-case
+OR
+https://cults3d.com/en/3d-model/various/waveshare-esp32-s3-5inch-display-dashboard-case-alfredimatteo
 
 <p align="center">
-  <img src="images/5Inch_With_3dCluster.webp" width="800">
+  <img src="images/images/3dSlimCase.jpg" width="800">
 </p>
 
 This contribution supports:
@@ -251,6 +253,21 @@ https://somahex00.wixsite.com/home/contact
 You will receive a custom firmware file created specifically for your board.
 
 Each license is hardware-bound and cannot be transferred to another device.
+
+---
+
+# Enclosure / 3d Case
+
+For premium user, you get to have one of these 2 designs for free:
+
+https://cults3d.com/en/3d-model/gadget/waveshare-esp32-s3-5inch-display-dashboard-case
+OR
+https://cults3d.com/en/3d-model/various/waveshare-esp32-s3-5inch-display-dashboard-case-alfredimatteo
+
+
+I can even customize the hole insert for you.
+
+For free users you can purchase one of the above 3d files to support the project or source your own enclosure.
 
 ---
 
