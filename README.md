@@ -227,7 +227,7 @@ OR
 https://cults3d.com/en/3d-model/various/waveshare-esp32-s3-5inch-display-dashboard-case-alfredimatteo
 
 <p align="center">
-  <img src="images/images/3dSlimCase.jpg" width="800">
+  <img src="images/3dSlimCase.jpg" width="800">
 </p>
 
 This contribution supports:
