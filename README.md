@@ -1,57 +1,252 @@
-# Megasquirt-Microsquirt-digital-dashboard-for-under-50-DIY
-Megasquirt/Microsquirt digital LCD dashboard for under 50$ DIY
+# Megasquirt / Microsquirt Digital LCD Dashboard - DIY under $50
 
-Do you wish you had money to invest for all these nice and expensive LCD race dashboards out there? 
-Do you need to monitor your ECU Data without bringing your laptop with you all the time?
+A low-cost digital racing dashboard solution for Megasquirt and Microsquirt ECUs using an ESP32-S3 LCD display.
 
-There's a solution, and it's very cheap. I've been tinkering for years to develop this solution, wasted a lot of money on development boards all for having the BEST solution ever.
+<p align="center">
+  <img src="images/Free_dashboard_design.jpg" width="800">
+</p>
 
-Check the following youtube video to see a demo for the free version: https://youtu.be/rjETbBOaq9w?is=f5A8JH6c0yH7SYUK
+## Introduction
 
-On this video, the dashboard is receiving simulated data over CanBus. The firmware is tested and currently running on 20+ cars and it's actually bug free.
+Have you ever looked at modern racing LCD dashboards and thought:
 
-Here how you can do it, it's very simple, first you purchase this (if you want to buy me a beer, purchase it through my link:
+*"I wish I could afford one..."*
+
+Professional motorsport dashboards are amazing, but they are often extremely expensive.
+
+This project was created to provide a cheap and reliable alternative:
+a fully functional digital dashboard capable of displaying ECU data without carrying a laptop around.
+
+After years of testing, development, and many prototype boards, this solution has evolved into a stable system currently running on **20+ cars**.
+
+The firmware has been tested extensively and is currently considered reliable and bug-free.
+
+---
+
+# Demo Video
+
+Free version demonstration:
+
+https://youtu.be/rjETbBOaq9w
+
+The video shows the dashboard receiving simulated CAN Bus data.
+
+---
+
+# Hardware Required
+
+You need:
+
+- ESP32-S3 5 inch LCD Touch Display
+- USB Type-C data cable
+- Megasquirt / Microsquirt ECU
+
+Recommended display:
+
+Waveshare ESP32-S3 Touch LCD 5 inch (800x480)
+
+If you prefer 7 Inch LCD, Check the following git:
+
+https://github.com/somahex00-web/Megasquirt-Microsquirt-7-LCD-digital-dashboard-for-under-50-DIY-
+
+Purchase link:
 
 https://www.waveshare.com/esp32-s3-touch-lcd-5.htm?&aff_id=155489
 
-you need the touch version with 800*480 resolution.
+(If you use my link, it helps support the project development.)
 
-Get a USB Type C data cable and hook it up into your device. 
+---
 
-Download my free_bin here:
+# Installing the Free Firmware
+
+## 1. Download Firmware
+
+Download the free firmware:
+
 https://github.com/somahex00-web/Megasquirt-Microsquirt-digital-dashboard-for-under-50-DIY/blob/main/Dash_Micro_LCD5_Free.bin
 
-Then visit this website https://esptool.spacehuhn.com/ and connect to your device.
+---
 
-You need to select your board from available COM Ports. It's easily detectable as it says "ESP32".
+## 2. Connect the Display
 
-If it doesn't connect, hold boot button, hold now reset button, keep for 2 seconds then release reset, wait 1 second and also release boot. It should work now.
+Connect the ESP32-S3 display to your PC using a USB Type-C data cable.
 
-After connection you will be prompted what to flash and where. You need to flash the firmware "LCD_DASH_5Inch_FREE.Bin" right at 0x0000 address.
-if you prefer a more visual guide, check:
+---
+
+## 3. Flash the Firmware
+
+Open:
+
+https://esptool.spacehuhn.com/
+
+Select your ESP32 device from the available COM ports.
+
+The board should be easily recognizable among COM devices, if it doesn't show up or it doesnt connect:
+
+1. Hold the BOOT button
+2. Press and hold RESET
+3. Keep both pressed for ~2 seconds
+4. Release RESET
+5. Wait 1 second
+6. Release BOOT
+
+The device should now connect.
+
+## 4. Flash Address
+
+When asked for the firmware file:
+
+Select:
+
+
+LCD_DASH_5Inch_FREE.bin
+
+
+Flash it at:
+
+
+0x0000
+
+
+A complete visual guide is available here:
 
 https://github.com/somahex00-web/Megasquirt-Microsquirt-digital-dashboard-for-under-50-DIY/blob/main/How%20to%20flash.pdf
 
-After it's done, reboot the device using the reset button or unplug/plug back your USB.
+After flashing:
 
-Very important!!! behind the board there's a small selector to enable the canbus termination resistor. If your canbus doesn't have any other node except ECU and Dashboard, you need to switch it on.
-if you have other nodes, I suggest you to check with a Multimeter if there are already 60ohm between CanH and CanL wires, this would mean the network is correctly terminated. If there are 120ohm, you most likely have 1 termination only and you need to activate the switch on the board.
+- Press RESET
+or
+- Disconnect and reconnect USB
 
-Now onto the wiring of the unit to the microsquirt! Follow this:
+The dashboard should boot.
+
+---
+
+# CAN Bus Termination
+
+Important:
+
+On the back of the display board there is a CAN Bus termination resistor selector.
+
+If your CAN network only contains:
+
+
+ECU + Dashboard
+
+
+you should enable the termination resistor.
+
+If you have multiple CAN devices:
+
+Check the resistance between CAN-H and CAN-L using a multimeter.
+
+Expected values:
+
+
+60 Ohm → Correct termination, you don't need to switch the ESP32 termination switch behind.
+120 Ohm → Missing second termination, you should enable the termination resistor switch behind the ESP32.
+
+
+
+---
+
+# Microsquirt Wiring
+
+Installation guide:
 
 https://github.com/somahex00-web/Megasquirt-Microsquirt-digital-dashboard-for-under-50-DIY/blob/main/Dashboard%20for%20microsquirt%20installation%20guide%20-%205%20inch%20dash%20ENG%20161025.pdf
 
-I've made tons of better graphics which i'm keeping for licensed use, you can check some on my youtube channel: https://www.youtube.com/@alfredodimatteo2850
+---
 
-One of the most recent version is the following: https://www.youtube.com/watch?v=xfOAbD9B4jw
+# Features
 
-List of features and available backgrounds here: 
+- CAN Bus ECU communication
+- Megasquirt / Microsquirt compatibility
+- Custom racing dashboard graphics
+- Multiple backgrounds
+- Touch interface
+- Standalone operation
+- No laptop required
+- Low-cost hardware
+
+More graphics and premium layouts:
+
+YouTube channel:
+
+https://www.youtube.com/@alfredodimatteo2850
+
+Example of a newer dashboard version:
+
+https://www.youtube.com/watch?v=xfOAbD9B4jw
+
+---
+
+# Dashboard Gallery
+example of licensed version design:
+
+<p align="center">
+  <img src="images/LuxuryV1_dashboard_design.png" width="800">
+</p>
+
+<p align="center">
+  <img src="images/MinimalRaceV1_dashboard_design.png" width="800">
+</p>
+
+Many others available.
+
+---
+
+# Available Backgrounds
+
+Catalogue:
+
 https://github.com/somahex00-web/Megasquirt-Microsquirt-digital-dashboard-for-under-50-DIY/blob/main/Catalogue.pdf
 
-How to purchase:
+---
 
-premium licensed software price is only 75 Euro, that's a contribution to my years of developing: this will help me to build new units / tools / graphics.
+# Premium License
 
-Basically, after you first flash the demo version of the device, you can get an unique license code clicking on the bottom right corner of the screen. If you wish to purchase the paid version, you need to send me license code and send me an inquiry through my website:
+The free version allows testing the hardware and basic dashboard functions.
+
+The premium firmware license costs:
+
+
+75 Euro
+
+
+This contribution supports:
+
+- New dashboard designs
+- Hardware development
+- New tools
+- Future improvements
+
+---
+
+# How to Purchase
+
+1. Flash the free version first
+2. Open the dashboard
+3. Click the bottom-right corner of the screen
+4. Copy your unique license code
+
+Send the license code through:
+
 https://somahex00.wixsite.com/home/contact
-what you get is your custom licensed firmware bin that will run only on your board and you cannot distribuite it to other boards. This is done to prevent multiple units having the same paid license.
+
+You will receive a custom firmware file created specifically for your board.
+
+Each license is hardware-bound and cannot be transferred to another device.
+
+---
+
+# Support
+
+For updates, new graphics and development:
+
+YouTube:
+https://www.youtube.com/@alfredodimatteo2850
+
+---
+
+Made with passion for DIY motorsport projects.
